@@ -113,7 +113,7 @@ app.get("/youtube/login", (req, res) => {
 });
 
 
-app.get((req,res) => {
+app.get("/",(req,res) => {
   res.send({
     data:"hello world"
   });
