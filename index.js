@@ -61,7 +61,7 @@ app.get("/spotify/callback", (req, res) => {
           refresh_token,
           expires_in,
         });
-        res.redirect(`http://localhost:5173/?${queryParams}`);
+        res.redirect(`https://transfer-music.vercel.app/?${queryParams}`);
 
       } else {
         res.send(response);
