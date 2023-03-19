@@ -113,7 +113,11 @@ app.get("/youtube/login", (req, res) => {
 });
 
 
-
+app.get((req,res) => {
+  res.send({
+    data:"hello world"
+  });
+});
 
 app.listen(PORT, () => {
   console.log("started backend of the app!!!");
